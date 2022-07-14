@@ -6,7 +6,7 @@ There's few things better than Ice Cream and Surfing on a hot summer day. That's
 
 ## Results 
 
-To create this output, we pulled the data from an `SQLite` file using `SQLAlchemy` and `Python`. Once this data was inside of Python, `Pandas` was used to pull certain months and run statistical analysis on that part of the year for all the years of data that we have (2010 - 2017). Below is an example of the code used to retrieve the data from the SQLite file for 2010 - 2017. 
+To create this output, we pulled the data from an `SQLite` file using `SQLAlchemy` and `Python`. This file contained weather data from different stations in Oahu, Hawaii. Once this data was inside of Python, `Pandas` was used to pull certain months and run statistical analysis on that part of the year for all the years of data that we have (2010 - 2017). Below is an example of the code used to retrieve the data from the SQLite file for 2010 - 2017. 
 
 ```
 june_results = session.query(Measurment.date, Measurment.tobs, Measurment.prcp).\
@@ -21,7 +21,7 @@ This is quite enjoyable weather for both surfing and ice cream, which is good ne
 
 ![june_temps](https://user-images.githubusercontent.com/60283799/178846297-2eb0a5f7-4c10-400d-8701-ccbe154b17b5.PNG)
 
-For December, the numbers don't change too much. We have a mean, or average, temperature of 71 and a max of 83.<br>
+For December, the numbers don't change too much. We have a mean, or average, temperature of 71 and a max of 83. <br> 
 Things are good for our potential business ventures. 
 
 ![december_temps](https://user-images.githubusercontent.com/60283799/178846313-b6796596-608a-48e6-8b9f-1605a86161f9.PNG)
